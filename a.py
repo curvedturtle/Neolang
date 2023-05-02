@@ -148,11 +148,11 @@ class Neolang:
         
         elif TYPE == 'PRINTINTERGER':
             value = code.replace('바보', '')
-            print(self.number(value))
+            print(self.number(value), end="")
         
         elif TYPE == 'PRINTASCII':
             value = code.replace('귀엽', '')
-            print(chr(self.number(value)))
+            print(chr(self.number(value)), end="")
 
     def compile(self, code, errors = 100000):
         index = 0
