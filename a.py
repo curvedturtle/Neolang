@@ -230,4 +230,4 @@ filename = ''
 if __name__ == '__main__':
     filename = input('.nl 파일 이름을 입력하세올')
     compiler = Neolang()
-    compiler.compileFile(f"C:/Users/0411c/Documents/Neolang/{filename}")
+    compiler.compileFile(filename)
