@@ -118,7 +118,7 @@ class Neolang:
             print(code + '을(를) 이해할 수 없네올...')
         
     def compileLine(self, code):
-        if code == '' or code == 'ㅎㅇ네올':
+        if code == '' or code == 'ㅎㅇ네올' or code == 'ㅂㅂ네올':
             return None
         TYPE = self.type(code)
         '''print(TYPE)'''
@@ -214,7 +214,7 @@ class Neolang:
         except:
             print('말도 안하고 가버리면 어떡하네올...')
 
-        self.compile(code[startLine:endLine])
+        self.compile(code[startLine:endLine - 1])
 
     def compileFile(self, path):
         try:
